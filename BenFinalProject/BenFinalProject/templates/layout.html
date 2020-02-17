@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -18,13 +18,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/" class="navbar-brand">Application name</a>
+                <a href="/" class="navbar-brand"> <!--this is not an ok comment-->
+                    <img src="https://i.imgur.com/16obUmK.png"  style="float:left;
+                                                                 width:65px;
+                                                                 margin-top: -13px;
+                                                                 height:40px;" />
+                    The Benworks
+                </a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url_for('home') }}">Home</a></li>
                     <li><a href="{{ url_for('about') }}">About</a></li>
                     <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    <li><a href="{{ url_for('Album') }}">Album</a></li>
+                    <li><a href="{{ url_for('Query') }}">Query</a></li>
+                    <li><a href="{{ url_for('Login') }}">Login</a></li>
+                    <li><a href="{{ url_for('Register') }}">Register</a></li>
                 </ul>
             </div>
         </div>
@@ -34,7 +44,7 @@
         {% block content %}{% endblock %}
         <hr />
         <footer>
-            <p>&copy; {{ year }} - My Flask Application</p>
+            <p>&copy; {{ year }} - Grad Corporation</p>
         </footer>
     </div>
 

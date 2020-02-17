@@ -17,6 +17,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>BenFinalProject</Name>
     <RootNamespace>BenFinalProject</RootNamespace>
+    <SuppressEnvironmentCreationPrompt>True</SuppressEnvironmentCreationPrompt>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -27,34 +28,41 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="BenFinalProject\Models\LocalDatabaseRoutines.py" />
+    <Compile Include="BenFinalProject\Models\QueryFormStructure.py" />
     <Compile Include="runserver.py" />
     <Compile Include="BenFinalProject\__init__.py" />
     <Compile Include="BenFinalProject\views.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BenFinalProject\" />
+    <Folder Include="BenFinalProject\Models\" />
     <Folder Include="BenFinalProject\static\" />
     <Folder Include="BenFinalProject\static\content\" />
+    <Folder Include="BenFinalProject\static\Data\" />
     <Folder Include="BenFinalProject\static\fonts\" />
+    <Folder Include="BenFinalProject\static\Pics\" />
     <Folder Include="BenFinalProject\static\scripts\" />
     <Folder Include="BenFinalProject\templates\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="requirements.txt" />
     <Content Include="BenFinalProject\static\content\bootstrap.css" />
     <Content Include="BenFinalProject\static\content\bootstrap.min.css" />
     <Content Include="BenFinalProject\static\content\site.css" />
+    <Content Include="BenFinalProject\static\Data\capitals.csv" />
+    <Content Include="BenFinalProject\static\Data\users.csv" />
     <Content Include="BenFinalProject\static\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="BenFinalProject\static\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="BenFinalProject\static\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="BenFinalProject\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="BenFinalProject\static\Pics\pic1.jpg" />
     <Content Include="BenFinalProject\static\scripts\bootstrap.js" />
     <Content Include="BenFinalProject\static\scripts\bootstrap.min.js" />
-    <Content Include="BenFinalProject\static\scripts\jquery-1.10.2.intellisense.js" />
+    <None Include="BenFinalProject\static\scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="BenFinalProject\static\scripts\jquery-1.10.2.js" />
     <Content Include="BenFinalProject\static\scripts\jquery-1.10.2.min.js" />
     <Content Include="BenFinalProject\static\scripts\jquery-1.10.2.min.map" />
-    <Content Include="BenFinalProject\static\scripts\jquery.validate-vsdoc.js" />
+    <None Include="BenFinalProject\static\scripts\jquery.validate-vsdoc.js" />
     <Content Include="BenFinalProject\static\scripts\jquery.validate.js" />
     <Content Include="BenFinalProject\static\scripts\jquery.validate.min.js" />
     <Content Include="BenFinalProject\static\scripts\jquery.validate.unobtrusive.js" />
@@ -62,7 +70,12 @@
     <Content Include="BenFinalProject\static\scripts\modernizr-2.6.2.js" />
     <Content Include="BenFinalProject\static\scripts\respond.js" />
     <Content Include="BenFinalProject\static\scripts\respond.min.js" />
-    <Content Include="BenFinalProject\static\scripts\_references.js" />
+    <None Include="BenFinalProject\static\scripts\_references.js" />
+    <Content Include="BenFinalProject\templates\login.html" />
+    <Content Include="BenFinalProject\templates\PictureAlbum.html" />
+    <Content Include="BenFinalProject\templates\query.html" />
+    <Content Include="BenFinalProject\templates\register.html" />
+    <Content Include="requirements.txt" />
     <Content Include="BenFinalProject\templates\about.html" />
     <Content Include="BenFinalProject\templates\contact.html" />
     <Content Include="BenFinalProject\templates\index.html" />
